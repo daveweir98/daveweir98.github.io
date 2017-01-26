@@ -3,6 +3,7 @@ body{
 }
 ul{
   text-align: center;
+  padding: 0;
   list-style-type: none;
   margin: 0;
   overflow: hidden;
@@ -17,7 +18,7 @@ li{
   background-color: white;
   width: 10%;
   font-size: 25px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "josefin sans";
 }
 li a{
   color: #5484a4;
@@ -28,7 +29,7 @@ li a:hover{
   font-size: 25.5px;
 }
 #Content {
-  padding-top: 5%;
+  padding-top: 2.5%;
   padding-left: 20%;
   padding-right: 20%;
   margin-top: 30px;
@@ -38,20 +39,32 @@ li a:hover{
   width: 29px;
 }
 h1{
-  font-size: 50px;
-  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 64px;
+  font-family: "josefin sans";
   color: #5484a4;
 }
+h2 a{
+  font-size: 48px;
+  font-family: "josefin sans";
+  color: #5484a4;
+  border-left: 3px solid #5484a4;
+  border-bottom: 3px solid #5484a4;
+  border-width: 100%;
+  padding-left: 5px;
+  text-decoration: none;
+}
 p{
-  font-size: 20px;
+  font-size: 24px;
   font-family: "Courier New", Courier, monospace;
   color: #2F4F4F;
   padding: 2.5%;
 }
 img{
   display: block;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 50%;
-  border: 3px solid #5484a4;
+  border: 5px solid #5484a4;
   background-color: #5484a4;
 }
