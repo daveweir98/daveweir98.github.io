@@ -60,6 +60,10 @@ p{
   color: #2F4F4F;
   padding: 2.5%;
 }
+p a{
+  color: #5484a4;
+  text-decoration: none;
+}
 img{
   display: block;
   margin-left: auto;
@@ -67,4 +71,16 @@ img{
   border-radius: 50%;
   border: 5px solid #5484a4;
   background-color: #5484a4;
+}
+.work-box{
+  background-image: url(code-screeny.png);
+  background-position: 0% 50%;
+  padding: 3%;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 32px;
+  margin: 2.5%;
+}
+.work-box a{
+  text-decoration: none;
+  color: white;
 }
