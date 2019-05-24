@@ -1,112 +1,157 @@
-<!DOCTYPE html>
+<html>
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="modal.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-  <ul>
-    <li><a href="#About"><b> About </b></a></li>
-    <li class="slash"> // </li>
-    <li><a href="#Work"><b> Work </b></a></li>
-    <li class="slash"> // </li>
-    <li><a href="#Contact"><b> Contact </b></a></li>
-    <li class="slash"> // </li>
-    <li><a href="https://drive.google.com/file/d/1GJX9mHbBZJc44kjM00XrK-cW5cSMy_QV/view?usp=sharing" target="_blank"><b> CV </b></a></li>
-  </ul>
-  <div id="Content">
-    <h1 id="Top">David Weir</h1>
-    <img src="dave-square.jpeg" alt="Picture of Me" width=300 height=300>
-    <h2 id="About"><a href="#Top"> About </a></h2>
-    <p> Hi! My name is Dave. </p>
-    <p> I am currently a final year Computer Applications/Software Engineering (CASE), student in Dublin City University. </p>
-    <p> I have an interest in software engineering, deep learning, computer vision and front-end development. </p>
-    <h2 id="Work"><a href="#Top"> Work & Projects </a></h2>
+  <div class="navbar">
+    <a href="#about">About</a>
+    <p>//</p>
+    <a href="#work">Work</a>
+    <p>//</p>
+    <a href="#projects">Projects</a>
+    <p>//</p>
+    <a href="#contact">Contact</a>
+    <p>//</p>
+    <a href="https://drive.google.com/file/d/1GJX9mHbBZJc44kjM00XrK-cW5cSMy_QV/view?usp=sharing" target="_blank">CV</a>
+  </div>
 
-    <h3> Work Experience </h3>
-
-    <a href="https://www.oath.com/">
-      <div class="jobCard">
-        <div class="jobTitle">
-          <h4> Oath Inc. </h4>
-          <h3> Software Engineer Intern </h3>
-          <h5> Summer 2018 (6 months) </h5>
+  <div class="content">
+    <div class="landing">
+      <img id="cover-image" src="dave-square.jpeg">
+      <div class="landing-name">
+        <h1>David Weir</h1>
+        <div class="socials">
+          <a class="linkedin" href="https://www.linkedin.com/in/david-weir-9072bb10a">
+            <img src="linkedin.png">
+          </a>
+          <a class="git" href="https://github.com/daveweir98">
+            <img src="git.png">
+          </a>
         </div>
-        <div class="jobDescription">
-          <p>
-            Gained industry development experience in Java, in addition to a focus on automating AWS deployments. I also, received introductions to industry standard tools such as AWS, and Jenkins CICD pipelines.
-          </p>
+        <p>Aspiring front-end engineer. </p>
+        <p>DCU Computer Applications Graduate. </p>
+      </div>
+    </div>
+
+    <div class="about" id="about">
+      <h2>About Me</h2>
+      <p> Hi! My name is Dave. </p>
+      <p> I am a <i>soon to be</i> graduate of Computer Applications/Software Engineering (CASE) in Dublin City University. </p>
+      <p> I have an interest in software engineering, deep learning, computer vision and front-end development. </p>
+    </div>
+
+    <div class="work" id="work">
+      <h2>Work Experience</h2>
+      <div class="work-jobs">
+        <div class="work-job" id="oath">
+          <div class="job-header">
+            <div class="job-title">
+              <h3>Software Engineer Intern</h3>
+              <h4>Oath Inc.</h4>
+            </div>
+            <img class="job-icon" src="code-icon.png">
+          </div>
+          <p class="job-description">Gained industry development experience in Java, in addition to a focus on automating AWS deployments. I also, received introductions to industry standard tools such as AWS, and Jenkins CICD pipelines.</p>
+          <p class="job-date">Summer 2018 (6 months)</p>
+        </div>
+
+        <div class="job-joiner">
+          <div class="joiner-circle"></div>
+        </div>
+
+        <div class="work-job" id="fenergo">
+          <div class="job-header">
+            <div class="job-title">
+              <h3>Quality Assurance Intern</h3>
+              <h4>Fenergo Ltd.</h4>
+            </div>
+            <img class="job-icon" src="qa-icon.png">
+          </div>
+          <p class="job-description">I gained experience with working in the software development industry as a whole. Took part in daily standups, performed manual test cases, and wrote Python scripts to create SOAP UI test cases.</p>
+          <p class="job-date">Summer 2017 (4 months)</p>
         </div>
       </div>
-    </a>
+    </div>
 
-    <a href="https://www.fenergo.com/">
-      <div class="jobCard">
-        <div class="jobTitle">
-          <h4> Fenergo Ltd. </h4>
-          <h3> Quality Assurance Intern </h3>
-          <h5>Summer 2017 (4 months) </h5>
+    <div class="projects" id="projects">
+      <h2>Projects</h2>
+      <div class="projects-list">
+        <div class="project" id="final-year">
+          <h3>Car Damage Analysis</h3>
         </div>
-        <div class="jobDescription">
-          <p>
-            I gained experience with working in the software development industry as a whole. Took part in daily standups, performed manual test cases, and wrote Python scripts to create SOAP UI test cases.
-          </p>
+
+        <div class="project" id="third-year">
+          <h3>Open Freelance Hub</h3>
+        </div>
+
+        <div class="project" id="match-tracker">
+          <h3>Match Tracker</h3>
         </div>
       </div>
-    </a>
 
-    <h3> Current Project </h3>
+    </div>
 
-    <p> My primary focus for this year is on my final year project. I am designing a system to detect damage on cars through machine learning and image processing.</p>
-
-    <a href="https://github.com/daveweir98/Ethereum-Freelance-Application">
-      <div class="work-box">
-        <i class="material-icons">directions_car</i>    Car Damage Analysis Blog
+    <div class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-methods">
+        <a class="linkedin" href="https://www.linkedin.com/in/david-weir-9072bb10a">
+          <img src="linkedin.png">
+        </a>
+        <a class="email" href="mailto:david.weir3@mail.dcu.ie">
+          <img src="email.png">
+        </a>
       </div>
-    </a>
+    </div>
+  </div>
 
-    <h3> Other Projects </h3>
+  <!--Modal Content-->
 
-    <p> Some of my other notable projects on github are linked below: </p>
+  <div class="modal" id="final-year-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Car Damage Analysis</h2>
+        <img id="close-final" src="close.png">
+      </div>
+      <p>Car damage analysis is a project I completed in my final year in DCU. It aims to detect damage in images of cars using machine learning and computer vision.</p>
+      <p>Some of the technologies used to implement this project were Python, Opencv, Flask, Java, Springboot, and Angular7</p>
+      <a class="git" href="https://github.com/daveweir98">
+        <img src="git.png">
+      </a>
+    </div>
+  </div>
 
-    <a href="https://github.com/daveweir98/Ethereum-Freelance-Application">
-      <div class="work-box">
-        <i class="material-icons">cloud_off</i>   Blockchain Freelance Application
+  <div class="modal" id="third-year-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Open Freelance Hub</h2>
+        <img id="close-third" src="close.png">
       </div>
-    </a>
-    <a href="https://github.com/daveweir98/MatchTracker" target="_blank">
-      <div class="work-box">
-        <i class="material-icons">android</i>    MatchTracker Android App
+      <p>Open Freelance Hub us a project I completed with a friend in third year in DCU. The application allows freelance workers to trade items of work for the cryptocurrency Ether on the Ethereum blockchain.</p>
+      <p>Some of the technologies used to implement this project were JavaScript, Web3js, and Solidity (A contract-based programming language)</p>
+      <a class="git" href="https://github.com/daveweir98/Ethereum-Freelance-Application">
+        <img src="git.png">
+      </a>
+    </div>
+  </div>
+
+  <div class="modal" id="match-tracker-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Match Tracker</h2>
+        <img id="close-match" src="close.png">
       </div>
-    </a>
-    <a href="https://github.com/daveweir98" target="_blank">
-      <div class="work-box">
-        <i class="material-icons">computer</i>   Github Account
-      </div>
-    </a>
-    <h2 id="Contact"><a href="#Top"> Contact </a></h2>
-    <p> If you would like to contact me for any reason you can reach me through my email or also through linkedIn</p>
-    <p> EMAIL: daveweir98@gmail.com </p>
-    <p> LinkedIn: <a href="https://ie.linkedin.com/in/david-weir-9072bb10a" target="_blank">  David Weir on LinkedIn  </a></p>
-   </div>
+      <p>Match Tracker is an android app I completed in my spare time. It allows spectators of GAA games to keep score of a match on their phone, and share the score to Twitter or Facebook </p>
+      <p>This android app was implemented with Java</p>
+      <a class="git" href="https://github.com/daveweir98/MatchTracker">
+        <img src="git.png">
+      </a>
+    </div>
+  </div>
+
+
 </body>
-<script type="text/javascript">
-$(document).ready(function(){
-  $('a[href^="#"]').on('click',function (e) {
-      e.preventDefault();
 
-      var target = this.hash;
-      var $target = $(target);
-
-      $('html, body').stop().animate({
-          'scrollTop': $target.offset().top
-      }, 1800, 'swing', function () {
-          window.location.hash = target;
-      });
-  });
-});
-</script>
 </html>

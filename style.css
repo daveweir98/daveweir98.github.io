@@ -1,181 +1,309 @@
-body{
-  margin: 0;
+body {
+    margin: 0;
 }
-ul{
-  text-align: center;
-  padding: 0;
-  list-style-type: none;
-  margin: 0;
-  overflow: hidden;
-  background-color: white;
-  position: fixed;
-  top: 0;
-  width: 100%
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Open Sans Condensed', sans-serif;
 }
-li{
-  display:inline-block;
-  padding: 1%;
-  background-color: white;
-  width: 10%;
-  font-size: 25px;
-  font-family: "josefin sans";
+
+p {
+    font-family: 'Open Sans', sans-serif;
 }
-li a{
-  padding: 5%;
-  color: #5484a4;
-  text-decoration: none;
-  box-shadow: 0px;
-  transition: box-shadow 0.1s linear;
+
+h2 {
+    font-size: 44px;
 }
-li a:hover{
-  box-shadow: 0px 3px #ff6961;
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    background-color: #002b36;
 }
-#Content {
-  padding-top: 2.5%;
-  padding-left: 20%;
-  padding-right: 20%;
-  margin-top: 30px;
+
+.navbar a {
+    padding: 0% 1%;
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
-.slash{
-  padding: 0;
-  width: 29px;
+
+.navbar a:hover {
+    box-shadow: 0 3px white;
 }
-h1{
-  text-align: center;
-  font-size: 64px;
-  font-family: "josefin sans";
-  color: #5484a4;
+
+.navbar p {
+    margin: 0;
+    color: white;
+    font-size: 32px;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
-h2 a{
-  font-size: 48px;
-  font-family: "josefin sans";
-  color: #5484a4;
-  border-width: 100%;
-  padding-left: 5px;
-  text-decoration: none;
+
+.content {
+    max-width: 100%;
+    padding-top: 10vh;
 }
-p{
-  font-size: 24px;
-  font-family: 'Montserrat', sans-serif;
-  color: #2F4F4F;
-  margin: 2.5%;
+
+/* Landing section containing name and image etc */
+.landing {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #002b36;
 }
-p a{
-  color: #5484a4;
-  text-decoration: none;
+
+.landing img {
+    border: 0px;
+    border-radius: 50%;
 }
-img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-  /*border: 5px solid #ff6961;*/
-  background-color: #ff6961;
-  box-shadow: 5px 5px #ff6961, -5px -5px #5484a4;
-  animation-name: imgShadow;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
+
+#cover-image {
+    height: 300px;
+    width: 300px;
+    border: 5px solid #ff554d;
 }
-@keyframes imgShadow {
-  0% {box-shadow: 7px 7px #ff6961, -7px -7px #5484a4;}
-  25% {box-shadow: 7px -7px #ff6961, -7px 7px #5484a4;}
-  50% {box-shadow: -7px -7px #ff6961, 7px 7px #5484a4;}
-  75% {box-shadow: -7px 7px #ff6961, 7px -7px #5484a4;}
-  100% {box-shadow: 7px 7px #ff6961, -7px -7px #5484a4;}
+
+.landing-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20%;
+    font-size: 64px;
+    padding-left: 5%;
+    color: white;
 }
-.work-box{
-  background-image: url(code-screeny.png);
-  background-position: 0% 50%;
-  padding: 3%;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 32px;
-  margin: 2.5%;
-  box-shadow: 0px 0px 0px 0px #ff6961;
-  transition: box-shadow 0.1s linear;
+
+.landing-name * {
+    margin: 0;
 }
-.work-box:hover{
-  box-shadow: 10px 10px #ff6961, -10px -10px #5484a4;
+
+.landing-name p {
+    border-left: 2px solid white;
+    padding-left: 20px;
+    font-size: 24px;
+    color: white;
 }
-a{
-  text-decoration: none;
-  color: white;
+
+.linkedin, .git, .email {
+    text-decoration: none;
 }
-.line{
-  background-color: #5484a4;
-  width: 100%;
-  height: 3px;
+
+.linkedin img, .git img {
+    height: 60px;
+    width: 60px;
+    filter: brightness(0) invert(1);
 }
-h3{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 32px;
-  color: #2F4F4F;
-  margin: 0px;
-  padding-left: 1%;
-  padding-bottom: 1%;
+
+/* about me section */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-h4{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
-  color: #BDBDBD;
-  margin: 0px;
-  padding-left: 1%;
-  border-left: 3px solid #5484a4;
+
+.about p {
+    font-size: 24px;
 }
-h5{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  color: #BDBDBD;
-  margin: 0px;
-  padding-left: 1%;
-  border-left: 3px solid #5484a4;
+
+/* work experience section */
+.work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-a .material-icons{
-  font-size: 40px;
-  padding: 5px;
-  border: 3px solid #ff6961;
-  border-radius: 50%;
+
+.work-jobs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
 }
-.work-text{
-  margin-top: 1%;
-  border-left: 3px solid #BDBDBD;
-  padding-left: 1%;
+
+.work-job {
+    background-color: white;
+    padding: 2%;
+    max-width: 40%;
+    border: 10px solid #002b36;
 }
-.jobCard {
-  display: flex;
-  margin-bottom: 20px;
+
+.work-job h3, h4 {
+    margin: 0;
 }
-.jobTitle {
-  width: 25%;
-  background: #5484a4;
-  border:0;
-  display: flex;
-  flex-direction: column;
+
+.job-date {
+    margin: 0;
+    text-align: right;
 }
-.jobTitle h4 {
-  font-size: 1.2em;
-  color: #F5F5F5;
-  border: 0;
-  font-weight:400;
-  margin: 3px;
+
+.job-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-.jobTitle h3 {
-  font-size: 1.5em;
-  border: 0;
-  color: white;
-  font-weight:800;
-  margin: 3px;
+
+.job-header img {
+    height: 50px;
+    width: 50px;
 }
-.jobTitle h5{
-  font-size: 1em;
-  border: 0;
-  font-weight:400;
-  margin: 3px;
-  color: #F5F5F5;
+
+.job-title {
+    display: flex;
+    flex-direction: column;
 }
-.jobDescription {
-  width: 75%;
-  border: 3px solid #5484a4;
+
+.job-joiner {
+    background-color: #002b36;
+    height: 100px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.jobDescription p {
-  font-size: 20px;
+
+.joiner-circle {
+    background-color: #002b36;
+    height: 60px;
+    width: 60px;
+    border: 0px;
+    border-radius: 50%;
+}
+
+/* projects section */
+
+.projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #002b36;
+}
+
+.projects h2 {
+    color: white;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.project {
+    height: 400px;
+    width: 400px;
+    margin: 2% 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 5px solid #5484a4;
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.project h3 {
+    margin: 0;
+    font-size: 32px;
+    padding-left: 10px;
+}
+
+#final-year {
+    background-image: url("carlogo.png");
+}
+
+#third-year {
+    background-image: url("ofh.png");
+}
+
+#match-tracker {
+    background-image: url("matchtracker.png");
+}
+
+/* contact section */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-methods .linkedin img, .contact-methods .email img {
+    height: 100px;
+    width: 100px;
+    filter: none;
+    margin: 20px;
+    margin-bottom: 80px;
+}
+
+/* modals */
+
+#final-year-modal, #third-year-modal, #match-tracker-modal {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    margin-top: auto;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(23, 37, 42, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.modal-header h2 {
+    margin: 0;
+}
+
+.modal-header img {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.modal-content {
+    padding: 5%;
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content p {
+    width: 100%;
+}
+
+.modal-content .git img {
+    filter: none;
 }
