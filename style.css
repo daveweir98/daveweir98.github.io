@@ -113,6 +113,7 @@ h2 {
 .about p {
     font-size: 24px;
     margin: 1% 4%;
+    text-align: center;
 }
 
 /* work experience section */
